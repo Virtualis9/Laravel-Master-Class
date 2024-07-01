@@ -11,4 +11,13 @@ class Task extends Model
     
 
     use HasFactory;
+
+
+    public function getRouteKey(){
+        return "slug";
+    }
+
+    protected $fillable = ['title', 'description', 'long_description'];
+    
+   
 }
